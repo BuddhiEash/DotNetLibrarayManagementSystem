@@ -1,27 +1,26 @@
 ﻿<Properties StartupConfiguration="{4AB58373-99A7-4544-B242-D67FA584F6D8}|https">
-  <MonoDevelop.Ide.ItemProperties.LibrarayManagementSystem PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LibrarayManagementSystem PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="LibrarayManagementSystem/Controllers/HomeController.cs">
     <Files>
-      <File FileName="LibrarayManagementSystem/Controllers/HomeController.cs" Line="14" Column="6" />
+      <File FileName="LibrarayManagementSystem/Controllers/HomeController.cs" Line="13" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LibrarayManagementSystem" expanded="True">
+          <Node name="LibrarayManagementSystem">
             <Node name="LibrarayManagementSystem" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="wwwroot" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

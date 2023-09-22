@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/Views/Main/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFpbi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/Views/Main/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFpbi9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/Views/Shared/Error.cshtml]
