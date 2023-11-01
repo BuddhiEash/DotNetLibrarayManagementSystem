@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem.csproj",
+      "projectUniqueName": "/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/LibrarayManagementSystem.csproj",
       "projectName": "LibrarayManagementSystem",
-      "projectPath": "/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem.csproj",
+      "projectPath": "/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/LibrarayManagementSystem.csproj",
       "packagesPath": "/Users/buddhieashwarage/.nuget/packages/",
-      "outputPath": "/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/obj/",
+      "outputPath": "/Users/buddhieashwarage/Documents/Codes/pet_projects/dotnet/LibrarayManagementSystem/LibrarayManagementSystem/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/buddhieashwarage/.nuget/NuGet/NuGet.Config"
