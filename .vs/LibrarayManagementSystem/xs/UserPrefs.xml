@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{4AB58373-99A7-4544-B242-D67FA584F6D8}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LibrarayManagementSystem/Controllers/MainController.cs">
+    <Files>
+      <File FileName="LibrarayManagementSystem/Program.cs" Line="4" Column="44" />
+      <File FileName="LibrarayManagementSystem/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="LibrarayManagementSystem/Views/Main/Index.cshtml" Line="1" Column="1" />
+      <File FileName="LibrarayManagementSystem/Controllers/MainController.cs" Line="9" Column="54" />
+      <File FileName="LibrarayManagementSystem/Views/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="LibrarayManagementSystem/Views/_ViewImports.cshtml" Line="3" Column="53" />
+      <File FileName="LibrarayManagementSystem/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="LibrarayManagementSystem/appsettings.json" Line="4" Column="32" />
+      <File FileName="LibrarayManagementSystem/Models/AppDbContext.cs" Line="7" Column="40" />
+      <File FileName="LibrarayManagementSystem/Models/User.cs" Line="9" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LibrarayManagementSystem">
+            <Node name="LibrarayManagementSystem">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="MainController.cs" selected="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Main" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LibrarayManagementSystem PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
