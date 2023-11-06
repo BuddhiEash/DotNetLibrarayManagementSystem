@@ -12,4 +12,10 @@ public class UserRoleController : Controller
     {
         _appDbContext = appDbContext;
     }
+
+    [HttpGet]
+    public IActionResult Index()
+    {
+        return View();
+    }
 }
