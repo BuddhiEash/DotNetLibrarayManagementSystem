@@ -8,14 +8,17 @@ namespace LibrarayManagementSystem.Controllers;
 public class UserRoleController : Controller
 {
     private readonly AppDbContext _appDbContext;
-    public UserRoleController(AppDbContext appDbContext)
+    private readonly ILogger<UserRoleController> _logger;
+    public UserRoleController(AppDbContext appDbContext, ILogger<UserRoleController> logger)
     {
         _appDbContext = appDbContext;
+        _logger = logger;
     }
 
     [HttpGet]
     public IActionResult Index()
     {
+        _logger.LogInformation("Loading User Controller Index View");
         return View();
     }
 }
