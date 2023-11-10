@@ -32,7 +32,7 @@ LibrarayManagementSystem/[Bb]in/
 LibrarayManagementSystem/[Oo]bj/
 [Ll]og/
 
-# Visual Studio and Visual Studio Code cache/options directory
+# Visual Studio and Visual Studio Code directory related files
 
 .vs/
 .vscode/
