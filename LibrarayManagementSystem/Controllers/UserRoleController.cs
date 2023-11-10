@@ -18,7 +18,7 @@ public class UserRoleController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        _logger.LogInformation("=== Loading User Controller Index View ===");
+        _logger.LogInformation("Loading User Controller Index View");
         return View();
     }
 }
