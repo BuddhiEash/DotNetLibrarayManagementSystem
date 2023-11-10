@@ -15,39 +15,40 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-bld/
-[Bb]in/
-[Oo]bj/
+LibrarayManagementSystem/[Dd]ebug/
+LibrarayManagementSystem/[Dd]ebugPublic/
+LibrarayManagementSystem/[Rr]elease/
+LibrarayManagementSystem/[Rr]eleases/
+LibrarayManagementSystem/x64/
+LibrarayManagementSystem/x86/
+LibrarayManagementSystem/bld/
+LibrarayManagementSystem/[Bb]in/
+LibrarayManagementSystem/[Oo]bj/
 [Ll]og/
 
-# Visual Studio 2015 cache/options directory
+# Visual Studio and VS Code cache/options directory
 .vs/
+.vscode/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
 # MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
+LibrarayManagementSystem/[Tt]est[Rr]esult*/
+LibrarayManagementSystem/[Bb]uild[Ll]og.*
 
 # NUNIT
 *.VisualState.xml
 TestResult.xml
 
 # Build Results of an ATL Project
-[Dd]ebugPS/
-[Rr]eleasePS/
-dlldata.c
+LibrarayManagementSystem/[Dd]ebugPS/
+LibrarayManagementSystem/[Rr]eleasePS/
+LibrarayManagementSystem/dlldata.c
 
 # DNX
-project.lock.json
-project.fragment.lock.json
-artifacts/
+LibrarayManagementSystem/project.lock.json
+LibrarayManagementSystem/project.fragment.lock.json
+LibrarayManagementSystem/artifacts/
 
 *_i.c
 *_p.c
