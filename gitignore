@@ -28,8 +28,8 @@ LibrarayManagementSystem/[Rr]eleases/
 LibrarayManagementSystem/x64/
 LibrarayManagementSystem/x86/
 LibrarayManagementSystem/bld/
-LibrarayManagementSystem/[Bb]in/
-LibrarayManagementSystem/[Oo]bj/
+./LibrarayManagementSystem/[Bb]in/
+./LibrarayManagementSystem/[Oo]bj/
 [Ll]og/
 
 # Visual Studio and Visual Studio Code directory related files
