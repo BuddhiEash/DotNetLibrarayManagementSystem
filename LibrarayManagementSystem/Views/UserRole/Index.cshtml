@@ -1,7 +1,13 @@
-﻿@{
+﻿@using LibrarayManagementSystem.Models;
+@{
     ViewData["Title"] = "User Roles Management";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome To User Roles Page</h1>
+    @{
+        var data = ViewData["roles"];
+    }
+    <h3>Test User Roles Results Set</h3>
+    <h3>Id: @data</h3>
 </div>

@@ -20,8 +20,10 @@ public class UserRoleController : Controller
     [HttpGet]
     public IActionResult Index()
     {
+        var userRoles = GetRoles();
         _logger.LogInformation("Loading User Controller Index View");
-        _logger.LogInformation("GetRoles Data : ", GetRoles());
+        _logger.LogInformation("GetRoles Data : ", userRoles);
+        ViewData["roles"] = userRoles;
         return View();
     }
 
