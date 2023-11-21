@@ -29,6 +29,6 @@ public class UserRoleController : Controller
 
     public List<UserRole> GetRoles()
     {
-        return _appDbContext.UserRoles.FromSqlRaw($"SELECT * FROM [userroles]").ToList();
+        return _appDbContext.UserRoles.FromSqlRaw($"SELECT * FROM userroles").ToList();
     }
 }
