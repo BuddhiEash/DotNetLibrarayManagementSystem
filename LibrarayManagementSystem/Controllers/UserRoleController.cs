@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using LibrarayManagementSystem.Models;
 using LibrarayManagementSystem.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace LibrarayManagementSystem.Controllers;
 
@@ -21,14 +19,26 @@ public class UserRoleController : Controller
     public IActionResult Index()
     {
         var userRoles = GetRoles();
+        ViewData["roles"] = null;
         _logger.LogInformation("Loading User Controller Index View");
-        _logger.LogInformation("GetRoles Data : ", userRoles);
-        ViewData["roles"] = userRoles;
+        if (userRoles is not null) 
+        {
+            _logger.LogInformation($"User roles are not null");
+            ViewData["roles"] = userRoles;
+        }
         return View();
     }
 
-    public List<UserRole> GetRoles()
+    public List<UserRole>? GetRoles()
     {
-        return _appDbContext.UserRoles.FromSqlRaw($"SELECT * FROM userroles").ToList();
+        try
+        {
+            return _appDbContext.UserRoles.OrderBy(u => u.Id).Take(10).ToList();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogInformation($"Failed to get the latest user:{ex}");
+            return null;
+        }
     }
 }
