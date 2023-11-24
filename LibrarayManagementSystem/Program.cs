@@ -1,4 +1,6 @@
 using LibrarayManagementSystem.Data;
+using LibrarayManagementSystem.Data.Interfaces;
+using LibrarayManagementSystem.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,8 @@ builder.Services.AddControllersWithViews();
 var connectionString = builder.Configuration.GetConnectionString("AppDbConnectionString");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connectionString, 
 ServerVersion.AutoDetect(connectionString)));
+// Register interfaces with service container for dependency injection
+builder.Services.AddScoped<IUserRolesRepository, UserRolesRepository>();
 
 var app = builder.Build();
 
