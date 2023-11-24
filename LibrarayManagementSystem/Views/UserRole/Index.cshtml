@@ -1,16 +1,15 @@
-﻿@using LibrarayManagementSystem.Models;
-@{
+﻿@{
     ViewData["Title"] = "User Roles Management";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome To User Roles Page</h1>
     @{
-        List<UserRole> users = (List<UserRole>)ViewData["roles"];
+        var users = ViewData["roles"];
     }
     @if (users is not null)
     {
-        @foreach (var user in users)
+        @foreach (var user in (dynamic)users)
         {
             <h3>Test User Roles Results Set</h3>
             <h3>Id: @user.Id</h3>
