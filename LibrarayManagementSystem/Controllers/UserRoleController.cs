@@ -5,18 +5,18 @@ namespace LibrarayManagementSystem.Controllers;
 
 public class UserRoleController : Controller
 {
-    private readonly IUserRolesRepository _userRolesRepository;
+    private readonly IUserRoleRepository _userRoleRepository;
     private readonly ILogger<UserRoleController> _logger;
-    public UserRoleController(IUserRolesRepository userRolesRepository, ILogger<UserRoleController> logger)
+    public UserRoleController(IUserRoleRepository userRoleRepository, ILogger<UserRoleController> logger)
     {
-        _userRolesRepository = userRolesRepository;
+        _userRoleRepository = userRoleRepository;
         _logger = logger;
     }
 
     [HttpGet]
     public IActionResult Index()
     {
-        var customers = _userRolesRepository.GetAll();
+        var customers = _userRoleRepository.GetAll();
         ViewData["roles"] = null;
         _logger.LogInformation("Loading User Controller Index View");
         if (customers is not null) 
