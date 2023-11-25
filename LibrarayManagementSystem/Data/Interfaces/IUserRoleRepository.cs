@@ -2,7 +2,7 @@
 
 namespace LibrarayManagementSystem.Data.Interfaces
 {
-    public interface IUserRolesRepository
+    public interface IUserRoleRepository
     {
         IEnumerable<UserRole> GetAll();
         UserRole Get(int id);
