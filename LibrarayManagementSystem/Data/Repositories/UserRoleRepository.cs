@@ -5,38 +5,38 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LibrarayManagementSystem.Data.Repositories
 {
-    public class UserRolesRepository : IUserRolesRepository
+    public class UserRoleRepository : IUserRoleRepository
     {
         private readonly AppDbContext _appDbContext;
 
-        public UserRolesRepository(AppDbContext appDbContext)
+        public UserRoleRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
 
-        public IEnumerable<UserRole> GetAll() => _appDbContext.UserRoles.OrderBy(u => u.Id).ToList();
+        public IEnumerable<UserRole> GetAll() => _appDbContext.UserRole.OrderBy(u => u.Id).ToList();
 
         public UserRole Get(int id)
         {
-            return _appDbContext.UserRoles.Find(id);
+            return _appDbContext.UserRole.Find(id);
         }
 
         public void Add(UserRole userRole)
         {
-            _appDbContext.UserRoles.Add(userRole);
+            _appDbContext.UserRole.Add(userRole);
         }
 
         public void Update(UserRole userRole)
         {
-            _appDbContext.UserRoles.Update(userRole);
+            _appDbContext.UserRole.Update(userRole);
         }
 
         public void Delete(int id)
         {
-            var user = _appDbContext.UserRoles.Find(id);
+            var user = _appDbContext.UserRole.Find(id);
             if (user != null)
             {
-                _appDbContext.UserRoles.Remove(user);
+                _appDbContext.UserRole.Remove(user);
             }
         }
     }

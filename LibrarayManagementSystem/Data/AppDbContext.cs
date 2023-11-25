@@ -7,5 +7,6 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions options) : base(options){}
 
-    public DbSet<UserRole> UserRoles {get;set;}
+    public DbSet<UserRole> UserRole {get;set;}
+    public DbSet<User> User {get;set; }
 }
