@@ -12,6 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connecti
 ServerVersion.AutoDetect(connectionString)));
 // Register interfaces with service container for dependency injection
 builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
