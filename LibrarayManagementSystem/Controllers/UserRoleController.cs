@@ -16,14 +16,8 @@ public class UserRoleController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        var customers = _userRoleRepository.GetAll();
-        ViewData["roles"] = null;
+        var data = _userRoleRepository.GetAll();
         _logger.LogInformation("Loading User Controller Index View");
-        if (customers is not null) 
-        {
-            _logger.LogInformation($"User roles are not null");
-            ViewData["roles"] = customers;
-        }
-        return View();
+        return data is not null ? View(data) : View(null);
     }
 }
