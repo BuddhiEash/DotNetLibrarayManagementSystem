@@ -1,9 +1,6 @@
-﻿@{
-    ViewData["Title"] = "User Roles Management";
-}
-
+﻿@model IEnumerable<LibrarayManagementSystem.Models.UserRole>
 @{
-    var users = ViewData["roles"];
+    ViewData["Title"] = "User Roles Management";
 }
 
 <div class="table-responsive">
@@ -17,9 +14,9 @@
             </tr>
         </thead>
         <tbody>
-            @if (users is not null)
-            {
-                @foreach (var user in (dynamic)users)
+            @* @if (data is not null)
+            { *@
+                @foreach (var user in Model)
                 {
                     <tr>
                         <td>@user.Id</td>
@@ -28,7 +25,7 @@
                         <td>@user.TimeStamps</td>
                     </tr>
                 }
-            }
+            @* } *@
         </tbody>
     </table>
 </div>
