@@ -14,8 +14,8 @@
             </tr>
         </thead>
         <tbody>
-            @* @if (data is not null)
-            { *@
+            @if (Model is not null)
+            {
                 @foreach (var user in Model)
                 {
                     <tr>
@@ -25,7 +25,7 @@
                         <td>@user.TimeStamps</td>
                     </tr>
                 }
-            @* } *@
+            }
         </tbody>
     </table>
 </div>
