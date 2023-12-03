@@ -1,13 +1,10 @@
-﻿@{
+﻿@model IEnumerable<LibrarayManagementSystem.Models.User>
+@{
     ViewData["Title"] = "Users Management";
 }
 
-@{
-    var users = ViewData["users"];
-}
-
 <div>
-    <a class="btn btn-success" href="#" role="button">Add User</a>
+    <a class="btn btn-success" href="#" role="button">Add New Staff Member</a>
 </div>
 <div class="table-responsive">
     <table class="table">
@@ -20,15 +17,15 @@
             </tr>
         </thead>
         <tbody>
-            @if (users is not null)
+            @if (Model is not null)
             {
-                @foreach (var user in (dynamic)users)
+                @foreach (var staff in Model)
                 {
                     <tr>
-                        <td>@user.Id</td>
-                        <td>@user.Name</td>
-                        <td>@user.IsActive</td>
-                        <td>@user.TimeStamps</td>
+                        <td>@staff.Id</td>
+                        <td>@staff.Name</td>
+                        <td>@staff.IsActive</td>
+                        <td>@staff.TimeStamps</td>
                     </tr>
                 }
             }
