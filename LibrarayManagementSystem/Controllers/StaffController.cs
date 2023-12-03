@@ -3,11 +3,11 @@ using LibrarayManagementSystem.Data.Interfaces;
 
 namespace LibrarayManagementSystem.Controllers;
 
-public class UserController : Controller
+public class StaffController : Controller
 {
     private readonly IUserRepository _userRepository;
     private readonly ILogger<UserRoleController> _logger;
-    public UserController(IUserRepository userRepository, ILogger<UserRoleController> logger)
+    public StaffController(IUserRepository userRepository, ILogger<UserRoleController> logger)
     {
         _userRepository = userRepository;
         _logger = logger;
