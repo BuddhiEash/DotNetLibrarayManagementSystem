@@ -16,14 +16,8 @@ public class StaffController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        var users = _userRepository.GetAll();
-        ViewData["roles"] = null;
-        _logger.LogInformation("Loading User Controller Index View");
-        if (users is not null) 
-        {
-            _logger.LogInformation($"User roles are not null");
-            ViewData["users"] = users;
-        }
-        return View();
+        var data = _userRepository.GetAll();
+        _logger.LogInformation("Loading Staff Controller Index View");
+        return data is not null ? View(data) : View(null);
     }
 }
