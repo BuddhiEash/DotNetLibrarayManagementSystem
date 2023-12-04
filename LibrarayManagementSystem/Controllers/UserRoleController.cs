@@ -17,7 +17,7 @@ public class UserRoleController : Controller
     public IActionResult Index()
     {
         var data = _userRoleRepository.GetAll();
-        _logger.LogInformation("Loading User Controller Index View");
+        _logger.LogInformation("Loading User Role Controller Index View");
         return data is not null ? View(data) : View(null);
     }
 }
